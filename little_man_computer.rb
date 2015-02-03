@@ -1,23 +1,23 @@
 #
 # A Simple Ruby 'Little Man Computer' Model
 #    http://en.wikipedia.org/wiki/Little_man_computer
-#    
+#
 #
 
-instruction_counter = 0
-calculator_display = 0
-current_instruction = 0
-mailbox = [901, 306, 901, 106, 902, 0]
-in_basket = []
-out_basket = []
+@instruction_counter = 0
+@calculator_display = 0
+@current_instruction = 0
+@mailbox = [901, 306, 901, 106, 902, 0]
+@in_basket = []
+@out_basket = []
 
 
 def perform(instruction)
 
-  calculator_display = 0
-  mailbox = [901, 306, 901, 106, 902, 0]
-  in_basket = []
-  out_basket = []
+  @calculator_display = 0
+  @mailbox = [901, 306, 901, 106, 902, 0]
+  @in_basket = []
+  @out_basket = []
 
   xx = instruction % 100
 
