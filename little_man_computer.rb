@@ -60,8 +60,8 @@ def perform(instruction)
   end
 
   while instruction_counter < mailbox.length
-    current_instruction = mailbox[instruction_counter]
-    instruction_counter += 1
+    @current_instruction = mailbox[instruction_counter]
+    @instruction_counter += 1
     perform(current_instruction)
   end
   puts(out_basket)
