@@ -1,10 +1,12 @@
 grid = []
 temp_grid = []
 
-201.times do
+
+100.times do
   grid.push(' ')
   temp_grid.push(' ')
 end
+
 
 grid[50] = '█'
 
@@ -48,7 +50,7 @@ end
 50.times do
 
   x = 1
-  while x < 200
+  while x < 101
     left = grid[x - 1]
     middle = grid[x]
     right = grid[x + 1]
