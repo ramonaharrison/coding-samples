@@ -1,4 +1,4 @@
-// sorts an array of numbers from lowest to highest
+# sorts an array of numbers from lowest to highest
 
 def bubble_sort(arr)
   j = 0
